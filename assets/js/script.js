@@ -28,3 +28,24 @@ function refreshPage() {
     document.getElementById('decimalResult').innerText = '';
     document.getElementById('binaryResult').innerText = '';
 }
+
+function showRules() {
+    document.getElementById('calculator-container').style.display = 'none';
+    document.getElementById('rules-container').style.display = 'block';
+}
+
+function showCalculator() {
+    document.getElementById('calculator-container').style.display = 'block';
+    document.getElementById('rules-container').style.display = 'none';
+}
+
+function switchTheme() {
+    const body = document.body;
+    if (body.classList.contains('spiderman-theme')) {
+        body.classList.remove('spiderman-theme');
+        body.classList.add('black-suit-theme');
+    } else {
+        body.classList.remove('black-suit-theme');
+        body.classList.add('spiderman-theme');
+    }
+}

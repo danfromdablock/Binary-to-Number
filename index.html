@@ -6,11 +6,30 @@
     <title>Binary Calculator</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="assets/js/script.js" defer></script>
 </head>
-<body>
+<body class="spiderman-theme">
 <h1 class="main-title">Binary Calculator</h1>
-<div class="container">
+<button class="theme-switcher" onclick="switchTheme()">Switch Theme</button>
+<div id="wrapper">
+    <div id="spiderman">
+        <div class="head">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+        </div>
+        <div class="body">
+            <div class="spider"></div>
+            <div class="arm-left"></div>
+            <div class="arm-right"></div>
+        </div>
+        <div class="legs">
+            <div class="boot-left"></div>
+            <div class="boot-right"></div>
+        </div>
+    </div>
+</div>
+<div class="container" id="calculator-container">
     <h2>Binary to Decimal Converter</h2>
     <input type="text" id="binaryInput" placeholder="Enter binary number">
     <button onclick="convertToDecimal()">Convert to Decimal</button>
@@ -22,9 +41,18 @@
     <p id="binaryResult"></p>
 
     <button onclick="refreshPage()">Refresh</button>
+    <button onclick="showRules()">Show Rules</button>
 </div>
+
+<div class="container" id="rules-container" style="display: none;">
+    <h2>Binary Calculator Rules</h2>
+    <p>Binary to Decimal: Enter a binary number (0s and 1s) and click "Convert to Decimal" to get its decimal equivalent.</p>
+    <p>Decimal to Binary: Enter a decimal number (0-255) and click "Convert to Binary" to get its 8-bit binary equivalent.</p>
+    <button onclick="showCalculator()">Back to Calculator</button>
+</div>
+
 <footer>
-    <p></p>
+    <p>Made by DCORTEZ</p>
 </footer>
 </body>
 </html>
