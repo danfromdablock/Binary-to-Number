@@ -1,37 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
     margin: 0;
+    background: linear-gradient(190deg, #cb11bc, #2575fc, #c108ff);
+}
+
+.main-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
 }
 
 .container {
     text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.61);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.17);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 input {
-    width: 200px;
-    padding: 10px;
-    margin: 10px 0;
+    width: 250px;
+    padding: 15px;
+    margin: 15px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     background-color: #007BFF;
     color: white;
     cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
 }
 
 button:hover {
@@ -40,12 +57,14 @@ button:hover {
 
 p {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
 }
 
 footer {
     margin-top: 20px;
     text-align: center;
     font-size: 1em;
-    color: #777;
+    color: #fff;
 }
